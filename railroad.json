@@ -1,0 +1,17 @@
+// https://tabatkins.github.io/railroad-diagrams/generator.html
+
+Diagram(
+  Choice(0,
+    Sequence(
+      NonTerminal('王'),
+      NonTerminal('小'),
+      NonTerminal('明')),
+    NonTerminal('王小明')),
+  NonTerminal("在"),
+  Choice(0,
+    NonTerminal('name-start char'),
+    NonTerminal('escape')),
+  ZeroOrMore(
+    Choice(0,
+      NonTerminal('name char'),
+      NonTerminal('escape'))))
