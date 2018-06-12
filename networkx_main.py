@@ -50,10 +50,10 @@ start_node_id = '<s>'
 end_node_id = '</s>'
 
 # setup node instance
-G.add_node(start_node_id)
+G.add_node(start_node_id, label=start_node_id)
 node_labels[start_node_id] = start_node_id
 
-G.add_node(end_node_id)
+G.add_node(end_node_id, label=end_node_id)
 node_labels[end_node_id] = end_node_id
 
 processed_working_str = dict()
@@ -111,14 +111,27 @@ def setup_node_edge_relationship(working_str, previous_node_id, offset, previous
     return current_node_id
 
 
-create_node_from_string(example, start_node_id, 0, 0)
+create_node_from_string(
+    example,
+    start_node_id,
+    0,
+    0.0  # using 0.0 than 0, used to fix bug that graphml file have two weight attributes
+)
 
 nx.draw_kamada_kawai(G, with_labels=True, labels=node_labels)
 
 plt.show()
 
 
-nx.write_graphml(G, 'main.graphml')
+nx.write_graphml(
+    G,
+    'main.graphml',
+
+    # Determine if numeric types should be generalized. For example,
+    # if edges have both int and float 'weight' attributes,
+    # we infer in GraphML that both are floats.
+    infer_numeric_types=True
+)
 
 shortest_path = nx.shortest_path(G, source=start_node_id, target=end_node_id)
 
