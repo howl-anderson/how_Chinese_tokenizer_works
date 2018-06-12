@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="shortest_path" attr.type="boolean" for="edge" id="d3" />
+  <key attr.name="round_weight" attr.type="double" for="edge" id="d2" />
+  <key attr.name="weight" attr.type="double" for="edge" id="d1" />
+  <key attr.name="label" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="&lt;s&gt;">
+      <data key="d0">&lt;s&gt;</data>
+    </node>
+    <node id="&lt;/s&gt;">
+      <data key="d0">&lt;/s&gt;</data>
+    </node>
+    <node id="0-1">
+      <data key="d0">知</data>
+    </node>
+    <node id="1-2">
+      <data key="d0">识</data>
+    </node>
+    <node id="2-3">
+      <data key="d0">就</data>
+    </node>
+    <node id="3-4">
+      <data key="d0">是</data>
+    </node>
+    <node id="4-5">
+      <data key="d0">力</data>
+    </node>
+    <node id="5-6">
+      <data key="d0">量</data>
+    </node>
+    <node id="4-6">
+      <data key="d0">力量</data>
+    </node>
+    <node id="2-4">
+      <data key="d0">就是</data>
+    </node>
+    <node id="0-2">
+      <data key="d0">知识</data>
+    </node>
+    <edge source="&lt;s&gt;" target="0-1">
+      <data key="d1">0.0</data>
+      <data key="d2">0.0</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="&lt;s&gt;" target="0-2">
+      <data key="d1">0.0</data>
+      <data key="d2">0.0</data>
+      <data key="d3">True</data>
+    </edge>
+    <edge source="0-1" target="1-2">
+      <data key="d1">8.304452038385845</data>
+      <data key="d2">8.3</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="1-2" target="2-3">
+      <data key="d1">9.976681511894869</data>
+      <data key="d2">9.98</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="1-2" target="2-4">
+      <data key="d1">9.976681511894869</data>
+      <data key="d2">9.98</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="2-3" target="3-4">
+      <data key="d1">5.393879217050072</data>
+      <data key="d2">5.39</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="3-4" target="4-5">
+      <data key="d1">4.322954412477752</data>
+      <data key="d2">4.32</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="3-4" target="4-6">
+      <data key="d1">4.322954412477752</data>
+      <data key="d2">4.32</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="4-5" target="5-6">
+      <data key="d1">8.626383565243215</data>
+      <data key="d2">8.63</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="5-6" target="&lt;/s&gt;">
+      <data key="d1">8.683176343377765</data>
+      <data key="d2">8.68</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="4-6" target="&lt;/s&gt;">
+      <data key="d1">8.694336401924431</data>
+      <data key="d2">8.69</data>
+      <data key="d3">True</data>
+    </edge>
+    <edge source="2-4" target="4-6">
+      <data key="d1">8.775613028440112</data>
+      <data key="d2">8.78</data>
+      <data key="d3">True</data>
+    </edge>
+    <edge source="2-4" target="4-5">
+      <data key="d1">8.775613028440112</data>
+      <data key="d2">8.78</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="0-2" target="2-4">
+      <data key="d1">8.89309986752752</data>
+      <data key="d2">8.89</data>
+      <data key="d3">True</data>
+    </edge>
+    <edge source="0-2" target="2-3">
+      <data key="d1">8.89309986752752</data>
+      <data key="d2">8.89</data>
+      <data key="d3">False</data>
+    </edge>
+  </graph>
+</graphml>
