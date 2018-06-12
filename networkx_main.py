@@ -40,7 +40,8 @@ for k, v in dict_data.items():
     dict_data[k] = math.log(total_weight / v)
 
 
-example = "王小明在北京的清华大学读书"
+# example = "王小明在北京的清华大学读书"
+example = "知识就是力量"
 
 G = nx.DiGraph()
 
@@ -67,14 +68,16 @@ def create_node_from_string(working_str, previous_node_id, offset, previous_node
         for next_node_id in processed_working_str[working_str]:
             G.add_edge(previous_node_id, next_node_id,
                        weight=previous_node_weight,
-                       round_weight=previous_node_round_weight)
+                       round_weight=previous_node_round_weight,
+                       shortest_path=False)
 
         return  # end of the execution
 
     if working_str == "":  # if no more working str, add current node to the end node.
         G.add_edge(previous_node_id, end_node_id,
                    weight=previous_node_weight,
-                   round_weight=previous_node_round_weight)
+                   round_weight=previous_node_round_weight,
+                   shortest_path=False)
         return  # end of the execution
 
     used_token = set()  # used to trace what token used for this working str
@@ -116,7 +119,8 @@ def setup_node_edge_relationship(working_str, previous_node_id, offset, previous
 
     G.add_edge(previous_node_id, current_node_id,
                weight=previous_node_weight,
-               round_weight=previous_node_round_weight)
+               round_weight=previous_node_round_weight,
+               shortest_path=False)
 
     # continue process remained string
     create_node_from_string(next_working_str, current_node_id, next_offset, current_node_weight)
@@ -129,6 +133,16 @@ create_node_from_string(
     0,
     0.0  # using 0.0 than 0, used to fix bug that graphml file have two weight attributes
 )
+
+shortest_path = nx.shortest_path(G, source=start_node_id, target=end_node_id)
+
+# set edge's attribute: `shortest_path` in shortest path to be True
+i = shortest_path[0]  # get initial start_node_id
+for j in shortest_path[1:]:
+    G.edges[i, j]['shortest_path'] = True
+
+    # update start_node_id
+    i = j
 
 nx.draw_kamada_kawai(G, with_labels=True, labels=node_labels)
 
@@ -145,8 +159,8 @@ nx.write_graphml(
     infer_numeric_types=True
 )
 
-shortest_path = nx.shortest_path(G, source=start_node_id, target=end_node_id)
 
+# get the labels of shortest path
 tokenize_result = [node_labels[i] for i in shortest_path]
 
 print(" ".join(tokenize_result))
