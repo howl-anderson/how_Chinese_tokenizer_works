@@ -60,14 +60,21 @@ processed_working_str = dict()
 
 
 def create_node_from_string(working_str, previous_node_id, offset, previous_node_weight):
+    # previous_node_round_weight used to better display of long digital value (e.g. 2.12343234234234324 to 2.13)
+    previous_node_round_weight = round(previous_node_weight, 2)
+
     if working_str in processed_working_str:  # this working str have been processed already
         for next_node_id in processed_working_str[working_str]:
-            G.add_edge(previous_node_id, next_node_id, weight=previous_node_weight)
+            G.add_edge(previous_node_id, next_node_id,
+                       weight=previous_node_weight,
+                       round_weight=previous_node_round_weight)
 
         return  # end of the execution
 
     if working_str == "":  # if no more working str, add current node to the end node.
-        G.add_edge(previous_node_id, end_node_id, weight=previous_node_weight)
+        G.add_edge(previous_node_id, end_node_id,
+                   weight=previous_node_weight,
+                   round_weight=previous_node_round_weight)
         return  # end of the execution
 
     used_token = set()  # used to trace what token used for this working str
@@ -90,6 +97,9 @@ def create_node_from_string(working_str, previous_node_id, offset, previous_node
 
 
 def setup_node_edge_relationship(working_str, previous_node_id, offset, previous_node_weight, token):
+    # previous_node_round_weight used to better display of long digital value (e.g. 2.12343234234234324 to 2.13)
+    previous_node_round_weight = round(previous_node_weight, 2)
+
     len_of_token = len(token)
 
     next_offset = offset + len_of_token
@@ -104,7 +114,9 @@ def setup_node_edge_relationship(working_str, previous_node_id, offset, previous
     # add lables info, this method is wired in networkx
     node_labels[current_node_id] = token
 
-    G.add_edge(previous_node_id, current_node_id, weight=previous_node_weight)
+    G.add_edge(previous_node_id, current_node_id,
+               weight=previous_node_weight,
+               round_weight=previous_node_round_weight)
 
     # continue process remained string
     create_node_from_string(next_working_str, current_node_id, next_offset, current_node_weight)
