@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="shortest_path" attr.type="boolean" for="edge" id="d3" />
   <key attr.name="round_weight" attr.type="double" for="edge" id="d2" />
   <key attr.name="weight" attr.type="double" for="edge" id="d1" />
   <key attr.name="label" attr.type="string" for="node" id="d0" />
@@ -11,188 +12,106 @@
       <data key="d0">&lt;/s&gt;</data>
     </node>
     <node id="0-1">
-      <data key="d0">王</data>
+      <data key="d0">知</data>
     </node>
     <node id="1-2">
-      <data key="d0">小</data>
+      <data key="d0">识</data>
     </node>
     <node id="2-3">
-      <data key="d0">明</data>
+      <data key="d0">就</data>
     </node>
     <node id="3-4">
-      <data key="d0">在</data>
+      <data key="d0">是</data>
     </node>
     <node id="4-5">
-      <data key="d0">北</data>
+      <data key="d0">力</data>
     </node>
     <node id="5-6">
-      <data key="d0">京</data>
-    </node>
-    <node id="6-7">
-      <data key="d0">的</data>
-    </node>
-    <node id="7-8">
-      <data key="d0">清</data>
-    </node>
-    <node id="8-9">
-      <data key="d0">华</data>
-    </node>
-    <node id="9-10">
-      <data key="d0">大</data>
-    </node>
-    <node id="10-11">
-      <data key="d0">学</data>
-    </node>
-    <node id="11-12">
-      <data key="d0">读</data>
-    </node>
-    <node id="12-13">
-      <data key="d0">书</data>
-    </node>
-    <node id="11-13">
-      <data key="d0">读书</data>
-    </node>
-    <node id="9-11">
-      <data key="d0">大学</data>
-    </node>
-    <node id="8-10">
-      <data key="d0">华大</data>
-    </node>
-    <node id="7-9">
-      <data key="d0">清华</data>
-    </node>
-    <node id="7-11">
-      <data key="d0">清华大学</data>
+      <data key="d0">量</data>
     </node>
     <node id="4-6">
-      <data key="d0">北京</data>
+      <data key="d0">力量</data>
     </node>
-    <node id="0-3">
-      <data key="d0">王小明</data>
+    <node id="2-4">
+      <data key="d0">就是</data>
+    </node>
+    <node id="0-2">
+      <data key="d0">知识</data>
     </node>
     <edge source="&lt;s&gt;" target="0-1">
       <data key="d1">0.0</data>
       <data key="d2">0.0</data>
+      <data key="d3">False</data>
     </edge>
-    <edge source="&lt;s&gt;" target="0-3">
+    <edge source="&lt;s&gt;" target="0-2">
       <data key="d1">0.0</data>
       <data key="d2">0.0</data>
+      <data key="d3">True</data>
     </edge>
     <edge source="0-1" target="1-2">
-      <data key="d1">8.022976138039672</data>
-      <data key="d2">8.02</data>
+      <data key="d1">8.304452038385845</data>
+      <data key="d2">8.3</data>
+      <data key="d3">False</data>
     </edge>
     <edge source="1-2" target="2-3">
-      <data key="d1">6.943889413956936</data>
-      <data key="d2">6.94</data>
+      <data key="d1">9.976681511894869</data>
+      <data key="d2">9.98</data>
+      <data key="d3">False</data>
+    </edge>
+    <edge source="1-2" target="2-4">
+      <data key="d1">9.976681511894869</data>
+      <data key="d2">9.98</data>
+      <data key="d3">False</data>
     </edge>
     <edge source="2-3" target="3-4">
-      <data key="d1">8.223737061779426</data>
-      <data key="d2">8.22</data>
+      <data key="d1">5.393879217050072</data>
+      <data key="d2">5.39</data>
+      <data key="d3">False</data>
     </edge>
     <edge source="3-4" target="4-5">
-      <data key="d1">4.413613515719755</data>
-      <data key="d2">4.41</data>
+      <data key="d1">4.322954412477752</data>
+      <data key="d2">4.32</data>
+      <data key="d3">False</data>
     </edge>
     <edge source="3-4" target="4-6">
-      <data key="d1">4.413613515719755</data>
-      <data key="d2">4.41</data>
+      <data key="d1">4.322954412477752</data>
+      <data key="d2">4.32</data>
+      <data key="d3">False</data>
     </edge>
     <edge source="4-5" target="5-6">
-      <data key="d1">8.121234223409555</data>
-      <data key="d2">8.12</data>
+      <data key="d1">8.626383565243215</data>
+      <data key="d2">8.63</data>
+      <data key="d3">False</data>
     </edge>
-    <edge source="5-6" target="6-7">
-      <data key="d1">9.119307230372169</data>
-      <data key="d2">9.12</data>
+    <edge source="5-6" target="&lt;/s&gt;">
+      <data key="d1">8.683176343377765</data>
+      <data key="d2">8.68</data>
+      <data key="d3">False</data>
     </edge>
-    <edge source="6-7" target="7-8">
-      <data key="d1">5.239155435944945</data>
-      <data key="d2">5.24</data>
+    <edge source="4-6" target="&lt;/s&gt;">
+      <data key="d1">8.694336401924431</data>
+      <data key="d2">8.69</data>
+      <data key="d3">True</data>
     </edge>
-    <edge source="6-7" target="7-9">
-      <data key="d1">5.239155435944945</data>
-      <data key="d2">5.24</data>
+    <edge source="2-4" target="4-5">
+      <data key="d1">8.775613028440112</data>
+      <data key="d2">8.78</data>
+      <data key="d3">False</data>
     </edge>
-    <edge source="6-7" target="7-11">
-      <data key="d1">5.239155435944945</data>
-      <data key="d2">5.24</data>
+    <edge source="2-4" target="4-6">
+      <data key="d1">8.775613028440112</data>
+      <data key="d2">8.78</data>
+      <data key="d3">True</data>
     </edge>
-    <edge source="7-8" target="8-9">
-      <data key="d1">8.140511792604224</data>
-      <data key="d2">8.14</data>
+    <edge source="0-2" target="2-4">
+      <data key="d1">8.89309986752752</data>
+      <data key="d2">8.89</data>
+      <data key="d3">True</data>
     </edge>
-    <edge source="7-8" target="8-10">
-      <data key="d1">8.140511792604224</data>
-      <data key="d2">8.14</data>
-    </edge>
-    <edge source="8-9" target="9-10">
-      <data key="d1">9.530408730887084</data>
-      <data key="d2">9.53</data>
-    </edge>
-    <edge source="8-9" target="9-11">
-      <data key="d1">9.530408730887084</data>
-      <data key="d2">9.53</data>
-    </edge>
-    <edge source="9-10" target="10-11">
-      <data key="d1">6.033297235501772</data>
-      <data key="d2">6.03</data>
-    </edge>
-    <edge source="10-11" target="11-12">
-      <data key="d1">8.142626018699612</data>
-      <data key="d2">8.14</data>
-    </edge>
-    <edge source="10-11" target="11-13">
-      <data key="d1">8.142626018699612</data>
-      <data key="d2">8.14</data>
-    </edge>
-    <edge source="11-12" target="12-13">
-      <data key="d1">9.270373906642817</data>
-      <data key="d2">9.27</data>
-    </edge>
-    <edge source="12-13" target="&lt;/s&gt;">
-      <data key="d1">8.05972730862781</data>
-      <data key="d2">8.06</data>
-    </edge>
-    <edge source="11-13" target="&lt;/s&gt;">
-      <data key="d1">10.150659881989021</data>
-      <data key="d2">10.15</data>
-    </edge>
-    <edge source="9-11" target="11-12">
-      <data key="d1">8.006816305903486</data>
-      <data key="d2">8.01</data>
-    </edge>
-    <edge source="9-11" target="11-13">
-      <data key="d1">8.006816305903486</data>
-      <data key="d2">8.01</data>
-    </edge>
-    <edge source="8-10" target="10-11">
-      <data key="d1">15.426646428052045</data>
-      <data key="d2">15.43</data>
-    </edge>
-    <edge source="7-9" target="9-11">
-      <data key="d1">10.948363091969808</data>
-      <data key="d2">10.95</data>
-    </edge>
-    <edge source="7-9" target="9-10">
-      <data key="d1">10.948363091969808</data>
-      <data key="d2">10.95</data>
-    </edge>
-    <edge source="7-11" target="11-12">
-      <data key="d1">11.085007854283452</data>
-      <data key="d2">11.09</data>
-    </edge>
-    <edge source="7-11" target="11-13">
-      <data key="d1">11.085007854283452</data>
-      <data key="d2">11.09</data>
-    </edge>
-    <edge source="4-6" target="6-7">
-      <data key="d1">7.463186361413075</data>
-      <data key="d2">7.46</data>
-    </edge>
-    <edge source="0-3" target="3-4">
-      <data key="d1">16.812940789171936</data>
-      <data key="d2">16.81</data>
+    <edge source="0-2" target="2-3">
+      <data key="d1">8.89309986752752</data>
+      <data key="d2">8.89</data>
+      <data key="d3">False</data>
     </edge>
   </graph>
 </graphml>
