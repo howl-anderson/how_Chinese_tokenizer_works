@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key attr.name="weight" attr.type="double" for="edge" id="d2" />
-  <key attr.name="weight" attr.type="long" for="edge" id="d1" />
+  <key attr.name="weight" attr.type="double" for="edge" id="d1" />
   <key attr.name="label" attr.type="string" for="node" id="d0" />
   <graph edgedefault="directed">
-    <node id="&lt;s&gt;" />
-    <node id="&lt;/s&gt;" />
+    <node id="&lt;s&gt;">
+      <data key="d0">&lt;s&gt;</data>
+    </node>
+    <node id="&lt;/s&gt;">
+      <data key="d0">&lt;/s&gt;</data>
+    </node>
     <node id="0-1">
       <data key="d0">王</data>
     </node>
@@ -67,97 +70,97 @@
       <data key="d0">王小明</data>
     </node>
     <edge source="&lt;s&gt;" target="0-1">
-      <data key="d1">0</data>
+      <data key="d1">0.0</data>
     </edge>
     <edge source="&lt;s&gt;" target="0-3">
-      <data key="d1">0</data>
+      <data key="d1">0.0</data>
     </edge>
     <edge source="0-1" target="1-2">
-      <data key="d2">8.022976138039672</data>
+      <data key="d1">8.022976138039672</data>
     </edge>
     <edge source="1-2" target="2-3">
-      <data key="d2">6.943889413956936</data>
+      <data key="d1">6.943889413956936</data>
     </edge>
     <edge source="2-3" target="3-4">
-      <data key="d2">8.223737061779426</data>
+      <data key="d1">8.223737061779426</data>
     </edge>
     <edge source="3-4" target="4-5">
-      <data key="d2">4.413613515719755</data>
+      <data key="d1">4.413613515719755</data>
     </edge>
     <edge source="3-4" target="4-6">
-      <data key="d2">4.413613515719755</data>
+      <data key="d1">4.413613515719755</data>
     </edge>
     <edge source="4-5" target="5-6">
-      <data key="d2">8.121234223409555</data>
+      <data key="d1">8.121234223409555</data>
     </edge>
     <edge source="5-6" target="6-7">
-      <data key="d2">9.119307230372169</data>
+      <data key="d1">9.119307230372169</data>
     </edge>
     <edge source="6-7" target="7-8">
-      <data key="d2">5.239155435944945</data>
+      <data key="d1">5.239155435944945</data>
     </edge>
     <edge source="6-7" target="7-9">
-      <data key="d2">5.239155435944945</data>
+      <data key="d1">5.239155435944945</data>
     </edge>
     <edge source="6-7" target="7-11">
-      <data key="d2">5.239155435944945</data>
+      <data key="d1">5.239155435944945</data>
     </edge>
     <edge source="7-8" target="8-9">
-      <data key="d2">8.140511792604224</data>
+      <data key="d1">8.140511792604224</data>
     </edge>
     <edge source="7-8" target="8-10">
-      <data key="d2">8.140511792604224</data>
+      <data key="d1">8.140511792604224</data>
     </edge>
     <edge source="8-9" target="9-10">
-      <data key="d2">9.530408730887084</data>
+      <data key="d1">9.530408730887084</data>
     </edge>
     <edge source="8-9" target="9-11">
-      <data key="d2">9.530408730887084</data>
+      <data key="d1">9.530408730887084</data>
     </edge>
     <edge source="9-10" target="10-11">
-      <data key="d2">6.033297235501772</data>
+      <data key="d1">6.033297235501772</data>
     </edge>
     <edge source="10-11" target="11-12">
-      <data key="d2">8.142626018699612</data>
+      <data key="d1">8.142626018699612</data>
     </edge>
     <edge source="10-11" target="11-13">
-      <data key="d2">8.142626018699612</data>
+      <data key="d1">8.142626018699612</data>
     </edge>
     <edge source="11-12" target="12-13">
-      <data key="d2">9.270373906642817</data>
+      <data key="d1">9.270373906642817</data>
     </edge>
     <edge source="12-13" target="&lt;/s&gt;">
-      <data key="d2">8.05972730862781</data>
+      <data key="d1">8.05972730862781</data>
     </edge>
     <edge source="11-13" target="&lt;/s&gt;">
-      <data key="d2">10.150659881989021</data>
-    </edge>
-    <edge source="9-11" target="11-13">
-      <data key="d2">8.006816305903486</data>
+      <data key="d1">10.150659881989021</data>
     </edge>
     <edge source="9-11" target="11-12">
-      <data key="d2">8.006816305903486</data>
+      <data key="d1">8.006816305903486</data>
+    </edge>
+    <edge source="9-11" target="11-13">
+      <data key="d1">8.006816305903486</data>
     </edge>
     <edge source="8-10" target="10-11">
-      <data key="d2">15.426646428052045</data>
+      <data key="d1">15.426646428052045</data>
     </edge>
     <edge source="7-9" target="9-11">
-      <data key="d2">10.948363091969808</data>
+      <data key="d1">10.948363091969808</data>
     </edge>
     <edge source="7-9" target="9-10">
-      <data key="d2">10.948363091969808</data>
-    </edge>
-    <edge source="7-11" target="11-13">
-      <data key="d2">11.085007854283452</data>
+      <data key="d1">10.948363091969808</data>
     </edge>
     <edge source="7-11" target="11-12">
-      <data key="d2">11.085007854283452</data>
+      <data key="d1">11.085007854283452</data>
+    </edge>
+    <edge source="7-11" target="11-13">
+      <data key="d1">11.085007854283452</data>
     </edge>
     <edge source="4-6" target="6-7">
-      <data key="d2">7.463186361413075</data>
+      <data key="d1">7.463186361413075</data>
     </edge>
     <edge source="0-3" target="3-4">
-      <data key="d2">16.812940789171936</data>
+      <data key="d1">16.812940789171936</data>
     </edge>
   </graph>
 </graphml>
